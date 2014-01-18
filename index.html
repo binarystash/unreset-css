@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Unreset.css</title>
+		<meta charset="utf-8"/>
+		<link href="css/reset.css" rel="stylesheet" type="text/css"/>
+		<link href="css/unreset.css" rel="stylesheet" type="text/css"/>
+		<link href="css/mystyle.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<div class="unreset copyright">
+			<cite>&copy;<a href="http://binarystash.blogspot.com" target="_blank">BinaryStash</a>. Licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC BY-SA 3.0</a></cite> 
+		</div>
+		<div class="all">
+			<div class="left">
+				<div class="title">reset.css only</div>
+				<h1>&lt;a&gt;</h1>
+				<p><a href="http://binarystash.blogspot.com">This links to BinaryStash.</a></p>
+				<h1>&lt;abbr&gt;</h1>
+				<p><abbr title="HyperText Markup Language">HTML</abbr> is the abbreviation of HyperText Markup Language.</p>
+				<h1>&lt;address&gt;</h1>
+				<address>Visit <a href="http://binarystash.blogspot.com">BinaryStash</a>.</address>
+				<h1>&lt;area&gt;, &lt;map&gt;, &lt;img&gt;</h1>
+				<p>Mouse over her face.</p>
+				<img src="media/photo.jpg" alt="Mona lisa" usemap="#map" width="100"/>
+				<map id="map" name="map">
+				  <area shape="poly" coords="30,20,70,20,70,40,30,70" href="#" alt="Mona lisa's face" title="My face" /> 
+				</map>
+				<h1>&lt;article&gt;<sup class="html5">HTML5</sup></h1>
+				<article>This is an article.</article>
+				<h1>&lt;aside&gt;<sup class="html5">HTML5</sup></h1>
+				<aside>This content has secondary priority.</aside>
+				<h1>&lt;audio&gt;<sup class="html5">HTML5</sup>, &lt;source&gt;<sup class="html5">HTML5</sup></h1>
+				<audio controls="controls" src="media/audio.ogg">
+				Your browser does not support the <code>audio</code> element.
+				</audio>
+				<p><cite>(O) Ludwig van Beethoven "Symphonie Nr. 5 c-moll - 1. Allegro con brio"</cite></p>
+				<h1>&lt;b&gt;</h1>
+				<p><b>This is bolded text.</b></p>
+				<h1>&lt;bdi&gt;<sup class="html5">HTML5</sup></h1>
+				<p dir="ltr"><bdi>اختبار</bdi> 4.</p>
+				<p>The arabic word should display before the number on browsers that support the tag.</p>
+				<h1>&lt;bdo&gt;</h1>
+				<p>Left to right</p>
+				<p><bdo dir="rtl">Right to left</bdo></p>
+				<h1>&lt;blockquote&gt;, &lt;cite&gt;</h1>
+				<blockquote>Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, who was a farmer, and Aunt Em, who was the farmer's wife. Their house was small, for the lumber to build it had to be carried by wagon many miles. There were four walls, a floor and a roof, which made one room; and this room contained a rusty looking cookstove, a cupboard for the dishes, a table, three or four chairs, and the beds. Uncle Henry and Aunt Em had a big bed in one corner, and Dorothy a little bed in another corner. There was no garret at all, and no cellar--except a small hole dug in the ground, called a cyclone cellar, where the family could go in case one of those great whirlwinds arose, mighty enough to crush any building in its path. It was reached by a trap door in the middle of the floor, from which a ladder led down into the small, dark hole. <br/>-<cite>1<sup>st</sup> paragraph, Chapter 1, The Wonderful Wizard Of Oz by L Frank Baum</cite></blockquote>
+				<h1>&lt;br&gt;</h1>
+				<p>This<br/>sentence<br/>is<br/>split<br/>into<br/>7<br/>lines.</p>
+				<h1>&lt;button&gt;</h1>
+				<p><button>This</button> is a sample button.</p>
+				<h1>&lt;canvas&gt;<sup class="html5">HTML5</sup>, &lt;script&gt;</h1>
+				<canvas id="myCanvas" width="200" height="20" style="border:1px solid #d3d3d3;">
+					Your browser does not support the <code>canvas</code> element.
+				</canvas>
+				<script type="text/javascript">
+					var c=document.getElementById("myCanvas");
+					var ctx=c.getContext("2d");
+
+					ctx.font="12px Arial";
+					ctx.fillText("This text is drawn by Javascript.",3,14);
+				</script>
+				<h1>&lt;caption&gt;</h1>
+				<table>
+					<caption>Below is a sample table and I'm its caption.</caption>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+					</tr>
+					<tr>
+						<td>Value 1</td>
+						<td>Value 2</td>
+					</tr>
+				</table>
+				<h1>&lt;code&gt;</h1>
+				<p>The following code is used to draw text on the <code>canvas</code> element.</p>
+				<code>&lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;20&quot; style=&quot;border:1px solid #d3d3d3;&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;Your browser does not support the &lt;code&gt;canvas&lt;/code&gt; element.<br/>&lt;/canvas&gt;<br/>&lt;script type=&quot;text/javascript&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var c=document.getElementById(&quot;myCanvas&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var ctx=c.getContext(&quot;2d&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;ctx.font=&quot;12px Arial&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;ctx.fillText(&quot;This text is drawn by Javascript.&quot;,3,14);<br/>&lt;/script&gt;</code>
+				<h1>&lt;col&gt;, &lt;colgroup&gt;</h1>
+				<table>
+					<caption>This table is styled using <code>col</code> and <code>colgroup</code> tags.</caption>
+					<colgroup>
+						<col style="background-color:blue;">
+						<col style="background-color:gray">
+					</colgroup>
+					<tr>
+						<td>Blue column</td>
+						<td>Gray column</td>
+					</tr>
+					<tr>
+						<td>Blue column</td>
+						<td>Gray column</td>
+					</tr>
+					<tr>
+						<td>Blue column</td>
+						<td>Gray column</td>
+					</tr>
+					
+				</table>
+				<h1>&lt;data&gt;<sup class="html5">HTML5</sup></h1>
+				<p><data value="4">Each</data> <data value="4">word</data> <data value="2">in</data> <data value="4">this</data> <data value="8">sentence</data> <data value="3">has</data> <data value="3">its</data> <data value="6">letter</data> <data value="5">count</data> <data value="10">associated</data> <data value="4">with</data> <data value="2">it</data>.</p>
+				<h1>&lt;datalist&gt;<sup class="html5">HTML5</sup></h1>
+				<p>The input tag becomes an autocomplete box. Type "m".</p>
+				<input list="fruits"/>
+				<datalist id="fruits">
+					<option value="Mango">
+					<option value="Melon">
+					<option value="Orange">
+					<option value="Grapes">
+				</datalist>
+				<h1>&lt;dl&gt;, &lt;dt&gt;, &lt;dfn&gt; &lt;dd&gt;</h1>
+				<p>Four tags were used to build the following glossary.</p>
+				<dl>
+					<dt>
+						<dfn>&lt;dl&gt;</dfn>
+					</dt>
+					<dd>HTML Description List Element</dd>
+					<dt>
+						<dfn>&lt;dt&gt;</dfn>
+					</dt>
+					<dd>HTML Definition Term Element</dd>
+					<dt>
+						<dfn>&lt;dfn&gt;</dfn>
+					</dt>
+					<dd> HTML Definition Element</dd>
+					<dt>
+						<dfn>&lt;dd&gt;</dfn>
+					</dt>
+					<dd>HTML Description Element</dd>
+				</dl>
+				<h1>&lt;del&gt;, &lt;ins&gt;</h1>
+				<p>The world is <del>flat</del> <ins>round and spherical</ins>.</p>
+				<h1>&lt;details&gt;<sup class="html5">HTML5</sup>, &lt;summary&gt;<sup class="html5">HTML5</sup></h1>
+				<p>Click on the arrows to reveal more details.</p>
+				<details>
+					<summary>Article 1</summary>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum massa sit amet ornare vehicula. Phasellus dictum diam libero, in molestie augue scelerisque consequat. In sapien nulla, pellentesque eu elit vel, rutrum cursus quam. Sed sit amet velit quis nunc dignissim viverra non eu urna. Etiam consectetur quam leo, at condimentum nibh sagittis in. Nulla facilisi. Vivamus ultrices fringilla felis.</p>
+				</details>
+				<details>
+					<summary>Article 2</summary>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum massa sit amet ornare vehicula. Phasellus dictum diam libero, in molestie augue scelerisque consequat. In sapien nulla, pellentesque eu elit vel, rutrum cursus quam. Sed sit amet velit quis nunc dignissim viverra non eu urna. Etiam consectetur quam leo, at condimentum nibh sagittis in. Nulla facilisi. Vivamus ultrices fringilla felis.</p>
+				</details>
+				<details>
+					<summary>Article 3</summary>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum massa sit amet ornare vehicula. Phasellus dictum diam libero, in molestie augue scelerisque consequat. In sapien nulla, pellentesque eu elit vel, rutrum cursus quam. Sed sit amet velit quis nunc dignissim viverra non eu urna. Etiam consectetur quam leo, at condimentum nibh sagittis in. Nulla facilisi. Vivamus ultrices fringilla felis.</p>
+				</details>
+				<h1>&lt;div&gt;</h1>
+				<div>This text is enclosed in a <code>div</code>. The <code>div</code> tag is primarily used for layouting web pages.</div>
+				<h1>&lt;em&gt;</h1>
+				<p><em>Tim Berners-Lee</em> is the inventor of the <em>World Wide Web.</em></p>
+				<h1>&lt;embed&gt;<sup class="html5">HTML5</sup></h1>
+				<embed src="media/flash.swf" width="100" height="100">
+				<h1>&lt;form&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;select&gt;, &lt;option&gt;, &lt;textarea&gt;, &lt;label&gt;, &lt;legend&gt;, &lt;keygen&gt;<sup class="html5">HTML5</sup></h1>
+				<form action="#" method="GET">
+					<fieldset>
+						<legend>Input</legend>
+						<input type="button" value="Button 1"/>
+						<input type="button" value="Button 2"/><br/>
+						<label><input type="checkbox" name="cb"/>Checkbox 1</label>
+						<label><input type="checkbox" name="cb"/>Checkbox 2</label>
+						<label><input type="checkbox" name="cb"/>Checkbox 3</label><br/>
+						<label>Color<sup class="html5">HTML5</sup>: <input type="color"/></label><br/>
+						<label>Date<sup class="html5">HTML5</sup>: <input type="date"/></label><br/>
+						<label>Date &amp; Time<sup class="html5">HTML5</sup>: <input type="datetime" /></label><br/>
+						<label>Date &amp; Time (Local)<sup class="html5">HTML5</sup>: <input type="datetime-local" /></label><br/>
+						<label>Email<sup class="html5">HTML5</sup>: <input type="email"/></label><br/>
+						<label>File: <input type="file"/></label><br/>
+						<label>Hidden: <input type="hidden"/><i>Check the source file</i></label><br/>
+						<label>Image: <input alt="Submit" style="vertical-align:middle" type="image" src="media/photo.jpg" width="100"/></label><br/>
+						<label>Month<sup class="html5">HTML5</sup>: <input type="month" /></label><br/>
+						<label>Number<sup class="html5">HTML5</sup>: <input type="number" /></label><br/>
+						<label>Password: <input type="password" /></label><br/>
+						<label>Password: <input type="password" /></label><br/>
+						<label><input type="radio" name="radios"/>Radio 1</label>
+						<label><input type="radio" name="radios"/>Radio 2</label>
+						<label><input type="radio" name="radios"/>Radio 3</label><br/>
+						<label>Range<sup class="html5">HTML5</sup>: <input type="range"/></label><br/>
+						<label>Reset: <input type="reset"/></label><br/>
+						<label>Search: <input type="search"/></label><br/>
+						<label>Submit: <input type="submit"/></label><br/>
+						<label>Tel<sup class="html5">HTML5</sup>: <input type="tel"/></label><br/>
+						<label>Text: <input type="text"/></label><br/>
+						<label>Time<sup class="html5">HTML5</sup>: <input type="time"/></label><br/>
+						<label>URL<sup class="html5">HTML5</sup>: <input type="url"/></label><br/>
+						<label>Week<sup class="html5">HTML5</sup>: <input type="week"/></label><br/>
+					</fieldset>
+					<fieldset>
+						<legend>Select</legend>
+						<p>Single option</p>
+						<select>
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+							<option>Option 4</option>
+							<option>Option 5</option>
+						</select>
+						<p>Grouped options</p>
+						<select>
+							<optgroup label="Group 1">
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+								<option>Option 4</option>
+								<option>Option 5</option>
+							</optgroup>
+							<optgroup label="Group 2">
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+								<option>Option 4</option>
+								<option>Option 5</option>
+							</optgroup>
+						</select>
+						<p>Multiple options</p>
+						<select multiple="multiple">
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+							<option>Option 4</option>
+							<option>Option 5</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<legend>Textarea</legend>
+						<textarea></textarea>
+					</fieldset>
+					<fieldset>
+						<legend>Keygen<sup class="HTML5">HTML5</sup></legend>
+						<keygen name="key"/>
+					</fieldset>
+				</form>
+				<h1>&lt;figure&gt;<sup class="html5">HTML5</sup>, &lt;figcaption&gt;<sup class="html5">HTML5</sup></h1>
+				<figure>
+					<img width="100" src="media/photo.jpg" alt="Mona lisa"/>
+					<figcaption>This is the picture of Mona Lisa and I am its caption.</figcaption>
+				</figure>
+				<h1>&lt;footer&gt;<sup class="html5">HTML5</sup></h1>
+				<footer>This is the footer.</footer>
+				<h1>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</h1>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+				<h1>&lt;header&gt;<sup class="html5">HTML5</sup></h1>
+				<footer>This is the header.</footer>
+				<h1>&lt;hr&gt;</h1>
+				<p>This is a paragraph.</p>
+				<hr/>
+				<p>This paragraph and the first paragraph has <code>hr</code> between them.</p>
+				<h1>&lt;i&gt;</h1>
+				<p><i>This is italicized text.</i></p>
+				<h1>&lt;iframe&gt;</h1>
+				<iframe src="http://binarystash.blogspot.com" width="100" height="100"></iframe>
+				<h1>&lt;kbd&gt;</h1>
+				<p>To open a new browser tab, press <kbd>Ctrl</kbd> + <kbd>T</kbd>.</p>
+				<h1>&lt;main&gt;<sup class="html5">HTML5</sup></h1>
+				<p>See the <code>main</code> tag on the right side.</p>
+				<h1>&lt;mark&gt;<sup class="html5">HTML5</sup></h1>
+				<p>All <mark>i</mark>nstances of the letter <mark>i</mark> are h<mark>i</mark>ghl<mark>i</mark>ghted <mark>i</mark>n th<mark>i</mark>s sentence.</p>
+				<h1>&lt;menu&gt;<sup class="html5">HTML5</sup></h1>
+				<menu label="File">
+					<button type="button" onclick="file_new()">New...</button>
+					<button type="button" onclick="file_open()">Open...</button>
+					<button type="button" onclick="file_save()">Save</button>
+				</menu>
+				<h1>&lt;meter&gt;<sup class="html5">HTML5</sup></h1>
+				<p>The movie got a <meter low="1" high="10" max="10" value="9">B</meter> rating.</p>
+				<h1>&lt;nav&gt;<sup class="html5">HTML5</sup></h1>
+				<nav>
+					<ul>
+						<li><a href="#">Navigation item 1</a></li>
+						<li><a href="#">Navigation item 2</a></li>
+						<li><a href="#">Navigation item 3</a></li>
+				  </ul>
+				</nav>
+				<h1>&lt;noscript&gt;</h1>
+				<script type="text/javascript">
+					document.write("Javascript is enabled.");
+				</script>
+				<noscript>Javascript is disabled or unsupported.</noscript>
+				<h1>&lt;object&gt;, &lt;param&gt;</h1>
+				<object width="100" height="100" data="media/flash.swf" type="application/x-shockwave-flash">
+					<param name="wmode" value="opaque">
+				</object>
+				<h1>&lt;ol&gt;, &lt;li&gt;</h1>
+				<ol>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+				</ol>
+				<h1>&lt;output&gt;<sup class="html5">HTML5</sup></h1>
+				10 + 10 = <output>20</output>
+				<h1>&lt;p&gt;</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui purus. Aliquam eget dolor ut tortor pretium rhoncus. Donec molestie dignissim tellus, at cursus nunc. Vestibulum sit amet velit vel mauris eleifend ultrices. Nunc fermentum purus porttitor luctus iaculis. Nulla bibendum ipsum sed nunc pretium volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse bibendum porttitor tortor a bibendum. Pellentesque vel tincidunt felis, at commodo diam. Mauris faucibus feugiat ultricies.</p>
+				<p>Cras sapien nulla, vulputate eget nisi non, pellentesque tincidunt sapien. Sed volutpat rutrum velit, eget vulputate nisi pretium at. Donec lobortis quam a libero tincidunt, nec ultrices risus lacinia. Quisque non diam eget quam lobortis semper. Proin non fringilla ipsum. Duis molestie turpis et elit venenatis sodales. Duis non risus nec metus viverra gravida varius ut est.</p>
+				<h1>&lt;pre&gt;</h1>
+				<pre>
+				Words
+				appear
+				in 
+				separate
+				lines
+				without
+				<code>br</code>
+				</pre>
+				<h1>&lt;progress&gt;<sup class="html5">HTML5</sup></h1>
+				<progress id="progress" value="0" max="100">0%</progress>
+				<button onclick="loadProgress()">Load</button>
+				<script type="text/javascript">
+					function loadProgress() {
+						document.getElementById("progress").value=100;
+						document.getElementById("progress").innerHTML="100%";
+					}
+				</script>
+				<h1>&lt;q&gt;</h1>
+				<q>Insanity: doing the same thing over and over again and expecting different results.</q>-<cite>Albert Einstein</cite>
+				<h1>&lt;ruby&gt;<sup class="html5">HTML5</sup>, &lt;rt&gt;<sup class="html5">HTML5</sup>, &lt;rp&gt;<sup class="html5">HTML5</sup></h1>
+				<p>I like the <ruby>金魚<rt>goldfish</rt><rp>(goldfish)</rp></ruby>.</p>
+				<h1>&lt;q&gt;</h1>
+				<p><s>This is strikethrough text.</s></p>
+				<h1>&lt;samp&gt;</h1>
+				<p><code>document.write("Hello World")</code> prints <samp>Hello World</samp> on the screen.</p>
+				<h1>&lt;section&gt;<sup class="html5">HTML5</sup></h1>
+				<section>
+					<h1>About Me</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui purus. Aliquam eget dolor ut tortor pretium rhoncus. Donec molestie dignissim tellus, at cursus nunc. Vestibulum sit amet velit vel mauris eleifend ultrices. Nunc fermentum purus porttitor luctus iaculis. Nulla bibendum ipsum sed nunc pretium volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse bibendum porttitor tortor a bibendum. Pellentesque vel tincidunt felis, at commodo diam. Mauris faucibus feugiat ultricies.</p>
+				</section>
+				<h1>&lt;small&gt;</h1>
+				<p>It is a <small>small</small> world.</p>
+				<h1>&lt;span&gt;</h1>
+				<p><span>Each</span> <span>word</span> <span>in</span> <span>this</span> <span>sentence</span> <span>is</span> <span>enclosed</span> <span>in</span> <span><code>span</code></span> <span>tags</span>.</p>
+				<h1>&lt;strong&gt;</h1>
+				<p><strong>BinaryStash</strong> wrote this document.</p>
+				<h1>&lt;sub&gt;, &lt;sup&gt;</h1>
+				<p>log<sub>2</sub>(64) = log<sub>2</sub>(2<sup>6</sup>) = 6 log<sub>2</sub>(2) = 6</p>
+				<h1>&lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</h1>
+				<table>
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>TOTAL</td>
+							<td>300</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td>Item 1</td>
+							<td>100</td>
+						</tr>
+						<tr>
+							<td>Item 2</td>
+							<td>200</td>
+						</tr>
+					</tbody>
+				</table>
+				<h1>&lt;time&gt;<sup class="html5">HTML5</sup></h1>
+				<p>Christmas is celebrated on <time datetime="2014-12-25">December 25</time>.</p>
+				<h1>&lt;u&gt;</h1>
+				<p><u>Some underlined text.</u></p>
+				<h1>&lt;ul&gt;</h1>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+				</ul>
+				<h1>&lt;var&gt;</h1>
+				<p>The equation of mass-energy equivalence is <var>E</var> = <var>m</var><var>c<sup>2</sup>.</var>
+				<h1>&lt;video&gt;<sup class="html5">HTML5</sup></h1>
+				<video width="300" controls>
+					<source src="media/video.mp4" type="video/mp4">
+				  Sorry, your browser doesn't support the <code>video</code> tag.
+				</video><br/>
+				<cite>Caminandes- Gran Dillama by the Blender Foundation<br/>Released under Creative Commons Attribution 3.0</cite>
+				<h1>&lt;wbr&gt;<sup class="html5">HTML5</sup></h1>
+				<p>scheme://host.domain:port/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/</p>
+			</div>
+			<div class="right unreset">
+				<div class="title">reset.css and unreset.css</div>
+				<h1>&lt;a&gt;</h1>
+				<p><a href="http://binarystash.blogspot.com">This links to BinaryStash.</a></p>
+				<h1>&lt;abbr&gt;</h1>
+				<p><abbr title="HyperText Markup Language">HTML</abbr> is the abbreviation of HyperText Markup Language.</p>
+				<h1>&lt;address&gt;</h1>
+				<address>Visit <a href="http://binarystash.blogspot.com">BinaryStash</a>.</address>
+				<h1>&lt;area&gt;, &lt;map&gt;, &lt;img&gt;</h1>
+				<p>Mouse over her face.</p>
+				<img src="media/photo.jpg" alt="Mona lisa" usemap="#map2" width="100"/>
+				<map id="map2" name="map2">
+				  <area shape="poly" coords="30,20,70,20,70,40,30,70" href="#" alt="Mona lisa's face" title="My face" /> 
+				</map>
+				<h1>&lt;article&gt;<sup class="html5">HTML5</sup></h1>
+				<article>This is an article.</article>
+				<h1>&lt;aside&gt;<sup class="html5">HTML5</sup></h1>
+				<aside>This content has secondary priority.</aside>
+				<h1>&lt;audio&gt;<sup class="html5">HTML5</sup>, &lt;source&gt;<sup class="html5">HTML5</sup></h1>
+				<audio controls="controls" src="media/audio.ogg">
+				Your browser does not support the <code>audio</code> element.
+				</audio>
+				<p><cite>(O) Ludwig van Beethoven "Symphonie Nr. 5 c-moll - 1. Allegro con brio"</cite></p>
+				<h1>&lt;b&gt;</h1>
+				<p><b>This is bolded text.</b></p>
+				<h1>&lt;bdi&gt;<sup class="html5">HTML5</sup></h1>
+				<p dir="ltr"><bdi>اختبار</bdi> 4.</p>
+				<p>The arabic word should display before the number on browsers that support the tag.</p>
+				<h1>&lt;bdo&gt;</h1>
+				<p>Left to right</p>
+				<p><bdo dir="rtl">Right to left</bdo></p>
+				<h1>&lt;blockquote&gt;, &lt;cite&gt;</h1>
+				<blockquote>Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, who was a farmer, and Aunt Em, who was the farmer's wife. Their house was small, for the lumber to build it had to be carried by wagon many miles. There were four walls, a floor and a roof, which made one room; and this room contained a rusty looking cookstove, a cupboard for the dishes, a table, three or four chairs, and the beds. Uncle Henry and Aunt Em had a big bed in one corner, and Dorothy a little bed in another corner. There was no garret at all, and no cellar--except a small hole dug in the ground, called a cyclone cellar, where the family could go in case one of those great whirlwinds arose, mighty enough to crush any building in its path. It was reached by a trap door in the middle of the floor, from which a ladder led down into the small, dark hole. <br/>-<cite>1<sup>st</sup> paragraph, Chapter 1, The Wonderful Wizard Of Oz by L Frank Baum</cite></blockquote>
+				<h1>&lt;br&gt;</h1>
+				<p>This<br/>sentence<br/>is<br/>split<br/>into<br/>7<br/>lines.</p>
+				<h1>&lt;button&gt;</h1>
+				<p><button>This</button> is a sample button.</p>
+				<h1>&lt;canvas&gt;<sup class="html5">HTML5</sup>, &lt;script&gt;</h1>
+				<canvas id="myCanvas2" width="200" height="20" style="border:1px solid #d3d3d3;">
+					Your browser does not support the <code>canvas</code> element.
+				</canvas>
+				<script type="text/javascript">
+					var c=document.getElementById("myCanvas2");
+					var ctx=c.getContext("2d");
+
+					ctx.font="12px Arial";
+					ctx.fillText("This text is drawn by Javascript.",3,14);
+				</script>
+				<h1>&lt;caption&gt;</h1>
+				<table>
+					<caption>Below is a sample table and I'm its caption.</caption>
+					<tr>
+						<th>Column 1</th>
+						<th>Column 2</th>
+					</tr>
+					<tr>
+						<td>Value 1</td>
+						<td>Value 2</td>
+					</tr>
+				</table>
+				<h1>&lt;code&gt;</h1>
+				<p>The following code is used to draw text on the <code>canvas</code> element.</p>
+				<code>&lt;canvas id=&quot;myCanvas&quot; width=&quot;200&quot; height=&quot;20&quot; style=&quot;border:1px solid #d3d3d3;&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;Your browser does not support the &lt;code&gt;canvas&lt;/code&gt; element.<br/>&lt;/canvas&gt;<br/>&lt;script type=&quot;text/javascript&quot;&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;var c=document.getElementById(&quot;myCanvas&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;var ctx=c.getContext(&quot;2d&quot;);<br/>&nbsp;&nbsp;&nbsp;&nbsp;ctx.font=&quot;12px Arial&quot;;<br/>&nbsp;&nbsp;&nbsp;&nbsp;ctx.fillText(&quot;This text is drawn by Javascript.&quot;,3,14);<br/>&lt;/script&gt;</code>
+				<h1>&lt;col&gt;, &lt;colgroup&gt;</h1>
+				<table>
+					<caption>This table is styled using <code>col</code> and <code>colgroup</code> tags.</caption>
+					<colgroup>
+						<col style="background-color:blue;">
+						<col style="background-color:gray">
+					</colgroup>
+					<tr>
+						<td>Blue column</td>
+						<td>Gray column</td>
+					</tr>
+					<tr>
+						<td>Blue column</td>
+						<td>Gray column</td>
+					</tr>
+					<tr>
+						<td>Blue column</td>
+						<td>Gray column</td>
+					</tr>
+					
+				</table>
+				<h1>&lt;data&gt;<sup class="html5">HTML5</sup></h1>
+				<p><data value="4">Each</data> <data value="4">word</data> <data value="2">in</data> <data value="4">this</data> <data value="8">sentence</data> <data value="3">has</data> <data value="3">its</data> <data value="6">letter</data> <data value="5">count</data> <data value="10">associated</data> <data value="4">with</data> <data value="2">it</data>.</p>
+				<h1>&lt;datalist&gt;<sup class="html5">HTML5</sup></h1>
+				<p>The input tag becomes an autocomplete box. Type "m".</p>
+				<input list="fruits2"/>
+				<datalist id="fruits2">
+					<option value="Mango">
+					<option value="Melon">
+					<option value="Orange">
+					<option value="Grapes">
+				</datalist>
+				<h1>&lt;dl&gt;, &lt;dt&gt;, &lt;dfn&gt; &lt;dd&gt;</h1>
+				<p>Four tags were used to build the following glossary.</p>
+				<dl>
+					<dt>
+						<dfn>&lt;dl&gt;</dfn>
+					</dt>
+					<dd>HTML Description List Element</dd>
+					<dt>
+						<dfn>&lt;dt&gt;</dfn>
+					</dt>
+					<dd>HTML Definition Term Element</dd>
+					<dt>
+						<dfn>&lt;dfn&gt;</dfn>
+					</dt>
+					<dd> HTML Definition Element</dd>
+					<dt>
+						<dfn>&lt;dd&gt;</dfn>
+					</dt>
+					<dd>HTML Description Element</dd>
+				</dl>
+				<h1>&lt;del&gt;, &lt;ins&gt;</h1>
+				<p>The world is <del>flat</del> <ins>round and spherical</ins>.</p>
+				<h1>&lt;details&gt;<sup class="html5">HTML5</sup>, &lt;summary&gt;<sup class="html5">HTML5</sup></h1>
+				<p>Click on the arrows to reveal more details.</p>
+				<details>
+					<summary>Article 1</summary>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum massa sit amet ornare vehicula. Phasellus dictum diam libero, in molestie augue scelerisque consequat. In sapien nulla, pellentesque eu elit vel, rutrum cursus quam. Sed sit amet velit quis nunc dignissim viverra non eu urna. Etiam consectetur quam leo, at condimentum nibh sagittis in. Nulla facilisi. Vivamus ultrices fringilla felis.</p>
+				</details>
+				<details>
+					<summary>Article 2</summary>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum massa sit amet ornare vehicula. Phasellus dictum diam libero, in molestie augue scelerisque consequat. In sapien nulla, pellentesque eu elit vel, rutrum cursus quam. Sed sit amet velit quis nunc dignissim viverra non eu urna. Etiam consectetur quam leo, at condimentum nibh sagittis in. Nulla facilisi. Vivamus ultrices fringilla felis.</p>
+				</details>
+				<details>
+					<summary>Article 3</summary>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum massa sit amet ornare vehicula. Phasellus dictum diam libero, in molestie augue scelerisque consequat. In sapien nulla, pellentesque eu elit vel, rutrum cursus quam. Sed sit amet velit quis nunc dignissim viverra non eu urna. Etiam consectetur quam leo, at condimentum nibh sagittis in. Nulla facilisi. Vivamus ultrices fringilla felis.</p>
+				</details>
+				<h1>&lt;div&gt;</h1>
+				<div>This text is enclosed in a <code>div</code>. The <code>div</code> tag is primarily used for layouting web pages.</div>
+				<h1>&lt;em&gt;</h1>
+				<p><em>Tim Berners-Lee</em> is the inventor of the <em>World Wide Web.</em></p>
+				<h1>&lt;embed&gt;<sup class="html5">HTML5</sup></h1>
+				<embed src="media/flash.swf" width="100" height="100">
+				<h1>&lt;form&gt;, &lt;fieldset&gt;, &lt;input&gt;, &lt;select&gt;, &lt;option&gt;, &lt;textarea&gt;, &lt;label&gt;, &lt;legend&gt;, &lt;keygen&gt;<sup class="html5">HTML5</sup></h1>
+				<form action="#" method="GET">
+					<fieldset>
+						<legend>Input</legend>
+						<input type="button" value="Button 1"/>
+						<input type="button" value="Button 2"/><br/>
+						<label><input type="checkbox" name="cb"/>Checkbox 1</label>
+						<label><input type="checkbox" name="cb"/>Checkbox 2</label>
+						<label><input type="checkbox" name="cb"/>Checkbox 3</label><br/>
+						<label>Color<sup class="html5">HTML5</sup>: <input type="color"/></label><br/>
+						<label>Date<sup class="html5">HTML5</sup>: <input type="date"/></label><br/>
+						<label>Date &amp; Time<sup class="html5">HTML5</sup>: <input type="datetime" /></label><br/>
+						<label>Date &amp; Time (Local)<sup class="html5">HTML5</sup>: <input type="datetime-local" /></label><br/>
+						<label>Email<sup class="html5">HTML5</sup>: <input type="email"/></label><br/>
+						<label>File: <input type="file"/></label><br/>
+						<label>Hidden: <input type="hidden"/><i>Check the source file</i></label><br/>
+						<label>Image: <input alt="Submit" style="vertical-align:middle" type="image" src="media/photo.jpg" width="100"/></label><br/>
+						<label>Month<sup class="html5">HTML5</sup>: <input type="month" /></label><br/>
+						<label>Number<sup class="html5">HTML5</sup>: <input type="number" /></label><br/>
+						<label>Password: <input type="password" /></label><br/>
+						<label>Password: <input type="password" /></label><br/>
+						<label><input type="radio" name="radios"/>Radio 1</label>
+						<label><input type="radio" name="radios"/>Radio 2</label>
+						<label><input type="radio" name="radios"/>Radio 3</label><br/>
+						<label>Range<sup class="html5">HTML5</sup>: <input type="range"/></label><br/>
+						<label>Reset: <input type="reset"/></label><br/>
+						<label>Search: <input type="search"/></label><br/>
+						<label>Submit: <input type="submit"/></label><br/>
+						<label>Tel<sup class="html5">HTML5</sup>: <input type="tel"/></label><br/>
+						<label>Text: <input type="text"/></label><br/>
+						<label>Time<sup class="html5">HTML5</sup>: <input type="time"/></label><br/>
+						<label>URL<sup class="html5">HTML5</sup>: <input type="url"/></label><br/>
+						<label>Week<sup class="html5">HTML5</sup>: <input type="week"/></label><br/>
+					</fieldset>
+					<fieldset>
+						<legend>Select</legend>
+						<p>Single option</p>
+						<select>
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+							<option>Option 4</option>
+							<option>Option 5</option>
+						</select>
+						<p>Grouped options</p>
+						<select>
+							<optgroup label="Group 1">
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+								<option>Option 4</option>
+								<option>Option 5</option>
+							</optgroup>
+							<optgroup label="Group 2">
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+								<option>Option 4</option>
+								<option>Option 5</option>
+							</optgroup>
+						</select>
+						<p>Multiple options</p>
+						<select multiple="multiple">
+							<option>Option 1</option>
+							<option>Option 2</option>
+							<option>Option 3</option>
+							<option>Option 4</option>
+							<option>Option 5</option>
+						</select>
+					</fieldset>
+					<fieldset>
+						<legend>Textarea</legend>
+						<textarea></textarea>
+					</fieldset>
+					<fieldset>
+						<legend>Keygen<sup class="HTML5">HTML5</sup></legend>
+						<keygen name="key"/>
+					</fieldset>
+				</form>
+				<h1>&lt;figure&gt;<sup class="html5">HTML5</sup>, &lt;figcaption&gt;<sup class="html5">HTML5</sup></h1>
+				<figure>
+					<img width="100" src="media/photo.jpg" alt="Mona lisa"/>
+					<figcaption>This is the picture of Mona Lisa and I am its caption.</figcaption>
+				</figure>
+				<h1>&lt;footer&gt;<sup class="html5">HTML5</sup></h1>
+				<footer>This is the footer.</footer>
+				<h1>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</h1>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+				<h1>&lt;header&gt;<sup class="html5">HTML5</sup></h1>
+				<footer>This is the header.</footer>
+				<h1>&lt;hr&gt;</h1>
+				<p>This is a paragraph.</p>
+				<hr/>
+				<p>This paragraph and the first paragraph has <code>hr</code> between them.</p>
+				<h1>&lt;i&gt;</h1>
+				<p><i>This is italicized text.</i></p>
+				<h1>&lt;iframe&gt;</h1>
+				<iframe src="http://binarystash.blogspot.com" width="100" height="100"></iframe>
+				<h1>&lt;kbd&gt;</h1>
+				<p>To open a new browser tab, press <kbd>Ctrl</kbd> + <kbd>T</kbd>.</p>
+				<h1>&lt;main&gt;<sup class="html5">HTML5</sup></h1>
+				<main>This represents the main content of this page.</main>
+				<h1>&lt;mark&gt;<sup class="html5">HTML5</sup></h1>
+				<p>All <mark>i</mark>nstances of the letter <mark>i</mark> are h<mark>i</mark>ghl<mark>i</mark>ghted <mark>i</mark>n th<mark>i</mark>s sentence.</p>
+				<h1>&lt;menu&gt;<sup class="html5">HTML5</sup></h1>
+				<menu label="File">
+					<button type="button" onclick="file_new()">New...</button>
+					<button type="button" onclick="file_open()">Open...</button>
+					<button type="button" onclick="file_save()">Save</button>
+				</menu>
+				<h1>&lt;meter&gt;<sup class="html5">HTML5</sup></h1>
+				<p>The movie got a <meter low="1" high="10" max="10" value="9">B</meter> rating.</p>
+				<h1>&lt;nav&gt;<sup class="html5">HTML5</sup></h1>
+				<nav>
+					<ul>
+						<li><a href="#">Navigation item 1</a></li>
+						<li><a href="#">Navigation item 2</a></li>
+						<li><a href="#">Navigation item 3</a></li>
+				  </ul>
+				</nav>
+				<h1>&lt;noscript&gt;</h1>
+				<script type="text/javascript">
+					document.write("Javascript is enabled.");
+				</script>
+				<noscript>Javascript is disabled or unsupported.</noscript>
+				<h1>&lt;object&gt;, &lt;param&gt;</h1>
+				<object width="100" height="100" data="media/flash.swf" type="application/x-shockwave-flash">
+					<param name="wmode" value="opaque">
+				</object>
+				<h1>&lt;ol&gt;, &lt;li&gt;</h1>
+				<ol>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+				</ol>
+				<h1>&lt;output&gt;<sup class="html5">HTML5</sup></h1>
+				10 + 10 = <output>20</output>
+				<h1>&lt;p&gt;</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui purus. Aliquam eget dolor ut tortor pretium rhoncus. Donec molestie dignissim tellus, at cursus nunc. Vestibulum sit amet velit vel mauris eleifend ultrices. Nunc fermentum purus porttitor luctus iaculis. Nulla bibendum ipsum sed nunc pretium volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse bibendum porttitor tortor a bibendum. Pellentesque vel tincidunt felis, at commodo diam. Mauris faucibus feugiat ultricies.</p>
+				<p>Cras sapien nulla, vulputate eget nisi non, pellentesque tincidunt sapien. Sed volutpat rutrum velit, eget vulputate nisi pretium at. Donec lobortis quam a libero tincidunt, nec ultrices risus lacinia. Quisque non diam eget quam lobortis semper. Proin non fringilla ipsum. Duis molestie turpis et elit venenatis sodales. Duis non risus nec metus viverra gravida varius ut est.</p>
+				<h1>&lt;pre&gt;</h1>
+				<pre>
+				Words
+				appear
+				in 
+				separate
+				lines
+				without
+				<code>br</code>
+				</pre>
+				<h1>&lt;progress&gt;<sup class="html5">HTML5</sup></h1>
+				<progress id="progress2" value="0" max="100">0%</progress>
+				<button onclick="loadProgress2()">Load</button>
+				<script type="text/javascript">
+					function loadProgress2() {
+						document.getElementById("progress2").value=100;
+						document.getElementById("progress2").innerHTML="100%";
+					}
+				</script>
+				<h1>&lt;q&gt;</h1>
+				<q>Insanity: doing the same thing over and over again and expecting different results.</q>-<cite>Albert Einstein</cite>
+				<h1>&lt;ruby&gt;<sup class="html5">HTML5</sup>, &lt;rt&gt;<sup class="html5">HTML5</sup>, &lt;rp&gt;<sup class="html5">HTML5</sup></h1>
+				<p>I like the <ruby>金魚<rt>goldfish</rt><rp>(goldfish)</rp></ruby>.</p>
+				<h1>&lt;q&gt;</h1>
+				<p><s>This is strikethrough text.</s></p>
+				<h1>&lt;samp&gt;</h1>
+				<p><code>document.write("Hello World")</code> prints <samp>Hello World</samp> on the screen.</p>
+				<h1>&lt;section&gt;<sup class="html5">HTML5</sup></h1>
+				<section>
+					<h1>About Me</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget dui purus. Aliquam eget dolor ut tortor pretium rhoncus. Donec molestie dignissim tellus, at cursus nunc. Vestibulum sit amet velit vel mauris eleifend ultrices. Nunc fermentum purus porttitor luctus iaculis. Nulla bibendum ipsum sed nunc pretium volutpat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse bibendum porttitor tortor a bibendum. Pellentesque vel tincidunt felis, at commodo diam. Mauris faucibus feugiat ultricies.</p>
+				</section>
+				<h1>&lt;small&gt;</h1>
+				<p>It is a <small>small</small> world.</p>
+				<h1>&lt;span&gt;</h1>
+				<p><span>Each</span> <span>word</span> <span>in</span> <span>this</span> <span>sentence</span> <span>is</span> <span>enclosed</span> <span>in</span> <span><code>span</code></span> <span>tags</span>.</p>
+				<h1>&lt;strong&gt;</h1>
+				<p><strong>BinaryStash</strong> wrote this document.</p>
+				<h1>&lt;sub&gt;, &lt;sup&gt;</h1>
+				<p>log<sub>2</sub>(64) = log<sub>2</sub>(2<sup>6</sup>) = 6 log<sub>2</sub>(2) = 6</p>
+				<h1>&lt;table&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</h1>
+				<table>
+					<thead>
+						<tr>
+							<th>Item</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<td>TOTAL</td>
+							<td>300</td>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td>Item 1</td>
+							<td>100</td>
+						</tr>
+						<tr>
+							<td>Item 2</td>
+							<td>200</td>
+						</tr>
+					</tbody>
+				</table>
+				<h1>&lt;time&gt;<sup class="html5">HTML5</sup></h1>
+				<p>Christmas is celebrated on <time datetime="2014-12-25">December 25</time>.</p>
+				<h1>&lt;u&gt;</h1>
+				<p><u>Some underlined text.</u></p>
+				<h1>&lt;ul&gt;</h1>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+					<li>Item 3</li>
+					<li>Item 4</li>
+					<li>Item 5</li>
+				</ul>
+				<h1>&lt;var&gt;</h1>
+				<p>The equation of mass-energy equivalence is <var>E</var> = <var>m</var><var>c<sup>2</sup>.</var>
+				<h1>&lt;video&gt;<sup class="html5">HTML5</sup></h1>
+				<video width="300" controls>
+					<source src="media/video.mp4" type="video/mp4">
+				  Sorry, your browser doesn't support the <code>video</code> tag.
+				</video><br/>
+				<cite>Caminandes- Gran Dillama by the Blender Foundation<br/>Released under Creative Commons Attribution 3.0</cite>
+				<h1>&lt;wbr&gt;<sup class="html5">HTML5</sup></h1>
+				<p>scheme://host.domain:port/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/<wbr/>subpage/</p>			
+			</div>
+			<div class="clear"></div>
+		</div>
+</html>
