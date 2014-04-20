@@ -1,5 +1,5 @@
 # Unreset.css
-Unreset.css restores default element styles which are reset by [Eric Meyer's Reset.css](http://meyerweb.com/eric/tools/css/reset/). Simply add the class unreset to the page element whose styles must be restored. Although unreset.css is specifically targeted to undo Eric Meyer's reset styles, it may also be used to undo styles by other reset stylesheets.
+Unreset.css restores default element styles which are reset by [Eric Meyer's Reset.css](http://meyerweb.com/eric/tools/css/reset/). Simply add the class `unreset` to the page element whose styles must be restored. Although unreset.css is specifically targeted to undo Eric Meyer's reset styles, it may also be used to undo styles by other reset stylesheets.
 
 Unreset.css is based on [Default style sheet for HTML 4](http://www.w3.org/TR/CSS21/sample.html) and the [official Webkit UA stylesheet](http://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css).
 
