@@ -15,15 +15,15 @@ Include unreset.css in your page
 
 Add the class `unreset` to the elements needing to be unreset.
 
-```html
-<div id="content" class="unreset">
-  <p>I use the default paragraph style.</p>
-  <ul>
-    <li>I will have a bullet point.</li>
-    <li>I will have a bullet point.</li>
-  </ul>
-</div>
-```
+  ```html
+  <div id="content" class="unreset">
+    <p>I use the default paragraph style.</p>
+    <ul>
+      <li>I will have a bullet point.</li>
+      <li>I will have a bullet point.</li>
+    </ul>
+  </div>
+  ```
 
 ## Compatibility 
 
